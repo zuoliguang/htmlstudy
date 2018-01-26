@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery.lookingfor demo page</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="http://yandex.st/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+	<script src="http://yandex.st/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://yandex.st/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+	<script src="../dist/jquery.lookingfor.min.js"></script>
+	<script>
+	jQuery(function($) {
+		$.get('data/countries.csv', function(data) {
+			var	_list = $('ul'),
+				_count = $('#count');
+
+			data = data.split('\n');
+			data.sort();
+
+			_list
+				.html('<li>' + data.join('</li><li>') + '</li>')
+				.lookingfor({
+					input: $('input'),
+					items: 'li',
+					highlight: true
+				});
+			_count.text(data.length);
+		}); 
+	});
+	hljs.initHighlightingOnLoad();
+	</script>
+	<style>
+	.hljs {
+		padding: 0;
+		background: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Countries (<span id="count"></span>)</h2>
+
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<div class="col-sm-5">
+
+<pre><code class="javascript">$('ul').lookingfor({
+	input: $('input'),
+	items: 'li',
+	highlight: true
+});
+</code></pre>
+
+					<input type="search" class="form-control" placeholder="Search query" autofocus="autofocus" />
+				</div>
+			</div>
+		</form>
+		
+		<ul></ul>
+	</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25863191 = new Ya.Metrika({id:25863191,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25863191" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

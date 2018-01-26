@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<prductList>
+    <product>
+        <spu_code> spu_code </spu_code> <!--  must have -->
+        <sku_code> sku_code </sku_code> <!--  must have -->
+        <title> title </title> <!--  must have -->
+        <descri> descri </descri> 
+        <brand> brand </brand> <!--  must have -->
+        <category> category </category> <!--  must have -->
+        <material> material </material> <!--  must have -->
+        <detail> detail </detail>
+        <sex> sex </sex> <!--  must have -->
+        <season_code> season_code </season_code> <!--  must have -->
+        <barcode> barcode </barcode>
+        <made_in> made_in </made_in> <!--  must have -->
+        <size> size </size> <!--  must have -->
+        <color> color </color> <!--  must have -->
+        <price> price </price> <!--  must have -->
+        <stock> stock </stock> <!--  must have -->
+        <pics>
+            <p0> Picture link address </p0> <!--  must have -->
+            <p1> Picture link address </p1> <!--  must have -->
+            <p2> Picture link address </p2> <!--  must have -->
+        </pics>
+    </product>
+
+    <product>
+        <spu_code>49543</spu_code>
+        <sku_code>330122</sku_code>
+        <title>MINICHARMLAG</title>
+        <descri>LAME GLITTER CLUTCH</descri>
+        <brand>JIMMY CHOO</brand>
+        <category>BORSA</category>
+        <material>Calf Leather </material>
+        <detail>Suede Outer Composition Suede 100% Outer Composition Spandex/Elastane 100% Sole Composition Rubber 100%</detail>
+        <sex>woman</sex>
+        <season_code>fw2016</season_code>
+        <barcode>2003734300018</barcode>
+        <made_in>Italy</made_in>
+        <size>UNICA</size>
+        <color>GOLD</color>
+        <price>700.0</price>
+        <stock>2</stock>
+        <pics>
+            <p0>http://185.58.119.177/xmag2014/ObjImg//3152014/3152014_140.jpg</p0>
+            <p1>http://185.58.119.177/xmag2014/ObjImg//3152014/3152014_141.jpg</p1>
+            <p2>http://185.58.119.177/xmag2014/ObjImg//3152014/3152014_142.jpg</p2>
+            <p3>http://185.58.119.177/xmag2014/ObjImg//3152014/3152014_143.jpg</p3>
+        </pics>
+    </product>
+
+    ... 
+</prductList>

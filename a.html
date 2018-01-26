@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./js/Ztoler.js"></script>
+    <title>ztool</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+        $(function() {
+            // 1、对象属性操作
+            // var obj 		= obj || {};
+            // obj['age'] 	= 120;
+            // obj['name'] 	= 'test';
+            // obj['fly'] 	= 'fly';
+            // ('name' in obj) && console.log(obj['name']);
+            // ('fly' in obj) && console.log('yes, i can fly!');
+
+            // 1、相当于 if () {} ^
+
+            // 2、数组批量操作
+            // var numbers 		= [2, 4, 6, 8];
+            // var doubleNums 	= numbers.map(function(element) {
+            //     return element * 2;
+            // });
+            // console.log('doubleNums: ', doubleNums);
+
+            // 2、数组元素的批量操作 ^
+
+            // 3、数组元素筛选
+            // var scores 		= [3, 12, 5, 23, 19, 7];
+            // var topScores 	= scores.filter(function(item){
+            // 	if (item > 10) return true;
+            //     return false;
+            // });
+            // console.log('topScores: ', topScores);
+
+            // 3、数组元素的筛选 ^
+
+            // ----注意了：老司机开挂了！
+
+            // 4、JS 占位符操作
+            // var domain 		= 'test';
+            // var path 		= 'test';
+            // var queryParams 	= 'a=1';
+            // var url 			= `http://www.${domain}.com/${path}?${queryParams}`;
+            // console.log(url);
+
+            // 4、字符串中变量的显示 ^
+
+            // 函数的简写方式1
+            // var test 	= (a,b) => a+b;
+            // var res 		= test(4,9);
+            // console.log(res);
+
+            // 函数排序 sort() 用闭包传进排序规则
+            // var arr = [1,9,3,7,8,23,10,2].sort((a,b) => { return (a>b) ? 1:-1; });
+            // console.log(arr);
+
+            // 5、函数的简写方式(闭包) 注意:这种简写函数的写法中禁止 new 的操作; ^
+
+            // var fun_a 		= (a) => 'fun_a:'+a;
+            // var fun_other 	= (other) => 'fun_other:'+other;
+            // var str 			= 'zzzzzzzz';
+            // var res 			= ( (str=='a') ? fun_a : fun_other )(str);
+            // console.log(res);
+
+            // 6、判断选择该执行哪个函数 ^
+
+            // var char = "abcdefghigjlmn"[3];
+            // console.log(char);
+
+            // 7、字符串当做数组使用 ^
+
+            // var users = [ 
+            // 	{name:'test_a',age:12},
+            // 	{name:'test_b',age:13},
+            // 	{name:'test_c',age:14},
+            // 	{name:'test_d',age:15}
+            // ];
+            // var user = users.find( user => user.name == 'test_d' );
+            // console.log(user);
+
+            // 8、避免循环数组的遍历筛选 ^
+
+            var a = Math.floor(5.8); // 向下取整数（1）
+            var a = ~~5.8; // 向下取整数（2）
+            console.log(a);
+
+            // 9、向下取整数的简写 ^
+
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>

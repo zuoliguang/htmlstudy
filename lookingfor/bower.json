@@ -1,0 +1,16 @@
+{
+  "name": "jquery.lookingfor",
+  "version": "0.0.8",
+  "main": ["jquery.lookingfor.js"],
+  "ignore": [
+  	"Gruntfile.js",
+    "package.json",
+    ".jscs.json",
+    ".jshintrc",
+    "screenshots",
+    "html"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  }
+}
